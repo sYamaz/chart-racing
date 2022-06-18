@@ -20,6 +20,8 @@ yarn dev -o
 - 改行文字：`\n`
 - ファイル末尾の改行：なし
 
+[Sample](/sampledata/dataDefinition.tsv)
+
 ### 列ヘッダ（１行目）
 
 | 列名      | 説明                                                                               |
