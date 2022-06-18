@@ -6,25 +6,21 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "nuxt-property-decorator";
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
-export interface StopButtonData{
-  onClick:() => void
+export interface StopButtonData {
+  onClick: () => void
 }
 
-@Component({components:{
-
-}})
+@Component({ components: {} })
 export default class StopButton extends Vue {
   @Prop()
   data!: StopButtonData
 
-  onClick(){
+  onClick() {
     this.data.onClick()
   }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

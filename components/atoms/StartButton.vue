@@ -1,32 +1,26 @@
 <template>
   <v-btn @click="onClick">
-    <v-icon>
-      mdi-play
-    </v-icon>
+    <v-icon> mdi-play </v-icon>
     Start
   </v-btn>
 </template>
 
 <script lang="ts">
-import {Vue, Component, Prop} from "nuxt-property-decorator"
+import { Vue, Component, Prop } from 'nuxt-property-decorator'
 
-export interface StartButtonData{
+export interface StartButtonData {
   onClick: () => void
 }
 
-@Component({components:{}})
+@Component({ components: {} })
 export default class StartButton extends Vue {
-
   @Prop()
-  data!:StartButtonData
+  data!: StartButtonData
 
-  onClick(){
+  onClick() {
     this.data.onClick()
   }
 }
-
 </script>
 
-<style>
-
-</style>
+<style></style>

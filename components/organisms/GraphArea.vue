@@ -7,24 +7,23 @@
 </template>
 
 <script lang="ts">
-import {Vue, Component, Prop} from "nuxt-property-decorator"
-import Chart, {ChartData} from "~/components/atoms/Chart.vue"
+import { Vue, Component, Prop } from 'nuxt-property-decorator'
+import Chart, { ChartData } from '~/components/atoms/Chart.vue'
 
-
-export interface GraphAreaData{
-  chartData:ChartData
-  aspectRatio:number
+export interface GraphAreaData {
+  chartData: ChartData
+  aspectRatio: number
 }
 
-@Component({components:{
-  Chart
-}})
-export default class GraphArea extends Vue{
+@Component({
+  components: {
+    Chart,
+  },
+})
+export default class GraphArea extends Vue {
   @Prop()
   data!: GraphAreaData
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

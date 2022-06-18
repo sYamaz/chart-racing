@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-app-bar :clipped-left="clipped" fixed app>
-      <v-spacer/>
-      <v-app-bar-title>{{title}}</v-app-bar-title>
-      <v-spacer/>
+      <v-spacer />
+      <v-app-bar-title>{{ title }}</v-app-bar-title>
+      <v-spacer />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -11,9 +11,9 @@
       </v-container>
     </v-main>
     <v-footer :absolute="!fixed" app>
-      <v-spacer/>
+      <v-spacer />
       <span>&copy; {{ new Date().getFullYear() }}</span>
-      <v-spacer/>
+      <v-spacer />
     </v-footer>
   </v-app>
 </template>
